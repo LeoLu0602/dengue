@@ -5,7 +5,7 @@ SERVER = '140.116.214.181:1433'
 USER = 'uclab'
 PWD = 'uclabDB2022'
 DB = 'sinopac_data'
-QUERY = 'SELECT [店家類別], lat, lng FROM [飲食店家]'
+QUERY = 'SELECT TOP 10 [店家類別], lat, lng FROM [飲食店家]'
 
 conn = pymssql.connect(server=SERVER, user=USER, password=PWD, database=DB)  
 cursor = conn.cursor()  
